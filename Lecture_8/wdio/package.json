@@ -1,0 +1,31 @@
+{
+  "name": "wdio",
+  "version": "1.0.0",
+  "description": "wdio page object demo",
+  "main": "index.js",
+  "scripts": {
+    "report": "allure generate ./allure-results -c && allure open",
+    "wdio": "wdio run wdio.conf.js",
+    "wdio2": "wdio run wdio.conf2.js",
+    "saucelabs": "wdio run wdio.saucelabs.js"
+  },
+  "keywords": [
+    "wdio, page object"
+  ],
+  "author": "ak",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/register": "^7.18.9",
+    "@wdio/allure-reporter": "^7.24.0",
+    "@wdio/cli": "^7.20.9",
+    "@wdio/local-runner": "^7.20.9",
+    "@wdio/mocha-framework": "^7.20.7",
+    "@wdio/sauce-service": "^7.24.0",
+    "@wdio/spec-reporter": "^7.20.8",
+    "allure-commandline": "^2.18.1",
+    "chromedriver": "^107.0.3",
+    "wdio-chromedriver-service": "^7.3.2"
+  }
+}
